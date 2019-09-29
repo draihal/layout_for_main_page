@@ -135,6 +135,36 @@ h3.heading {
 
 /*--- Teachers section --*/
 
+.fixed {
+    background-image: url(../image/light-background.png);
+    z-index: -1;
+}
+.dark {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5rem 1rem;
+}
+.fixed-background h3 {
+    margin-bottom: 2rem;
+}
+.fixed-background p {
+    margin-top: 1.5rem;
+}
+
+/*--- Reviews section --*/
+
+.reviews img {
+    width: 100%;
+    border-radius: 50%;
+}
+blockquote .svg-inline--fa{
+    color: #1ebba3;
+    margin: 1rem;
+}
+.reviews-hr {
+    border-top: .05rem solid #1ebba3;
+}
+
 
 
 
