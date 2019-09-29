@@ -22,14 +22,14 @@ body {
     letter-spacing: .08rem;
     background: rgba(0, 0, 0, 0.6)!important;
 }
-#bell-icon img {
-    height: 1.5rem;
+#bell-icon svg.svg-inline--fa {
+    height: 1.3rem;
 }
-#login-icon img {
-    height: 1.5rem;
+#login-icon svg.svg-inline--fa {
+    height: 1.3rem;
 }
 .navbar-nav li {
-    padding-right: 0.4rem;
+    padding-right: 0.2rem;
 }
 .navbar-nav .navbar-dark .nav-link {
     color: white;
@@ -195,6 +195,32 @@ hr.socket {
     margin-left: -100%;
     /*border-top: .2rem solid #666b71;*/
     /*margin-top: 3rem;*/
+}
+
+/*--- Media Queries --*/
+
+@media (max-width: 767px) {
+.caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+}
+.caption h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+.narrow h1 {
+    font-size: 1.5rem;
+}
+.reviews img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 }
 
 
