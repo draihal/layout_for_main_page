@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/base.css">
     <link rel="stylesheet" href="static/css/fixed.css">
+    <link rel="stylesheet" href="static/css/infinite-slider.css">
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
 <!--- Start Home Section -->
@@ -163,41 +164,16 @@
     <div class="col-12 narrow text-center">
         <h1>Ждут выпуска</h1>
     </div>
-    <div class="partners-logo row text-center">
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-amazon fa-5x"></i>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-apple fa-5x"></i>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-cc-amex fa-5x"></i>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-tripadvisor fa-5x"></i>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-yandex fa-5x"></i>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="logo">
-                <i class="fab fa-facebook fa-5x"></i>
-            </div>
-        </div>
-    </div> <!--- End Row -->
-    <div class="col-12 text-center">
-        <a class="btn btn-secondary btn-md" href="#">Все компании</a>
-    </div>
+    <section class="customer-logos slider">
+        <div class="slide"><i class="fab fa-amazon fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-apple fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-cc-amex fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-tripadvisor fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-yandex fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-facebook fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-google fa-5x"></i></div>
+        <div class="slide"><i class="fab fa-odnoklassniki fa-5x"></i></div>
+    </section>
 </div>
 <!--- End Partners Section -->
 <!--- Start Reviews Section -->
@@ -255,7 +231,7 @@
 <div id="footer">
     <footer>
         <div class="row footer-columns justify-content-center">
-            <div class="col-md-2">
+            <div class="footer-column col-md-2">
                 <ul class="list-unstyled">
                     <li><a href="#" target="_blank">
                         <i class="fab fa-facebook-square fa-2x"></i>
@@ -271,7 +247,7 @@
                     </a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="footer-column col-md-2">
                 <ul class="list-unstyled">
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">СМИ о нас</a></li>
@@ -280,7 +256,7 @@
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="footer-column col-md-2">
                 <ul class="list-unstyled">
                     <li><a href="#">Мероприятия</a></li>
                     <li><a href="#">Каталог курсов</a></li>
@@ -289,7 +265,7 @@
                     <li><a href="#">Программы лояльности</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="footer-column col-md-3">
                 <a href="tel:+79259999999" title="+7 925 999 99 99">+7 925 999 99 99</a>
                 <p>По всем вопросам пишите на
                     <a href="mailto:help@test.com" target="_blank" title="help@test.com">help@test.com</a>
@@ -306,7 +282,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-5 text-center">
+            <div class="col-md-5 text-center socket-div">
                 <hr class="socket">
                 &copy; 2015-2019
             </div>
@@ -318,6 +294,9 @@
 <script src="static/jquery/jquery-3.4.1.min.js"></script>
 <script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="static/js/carousel.js"></script>
+<script src="static/js/navbar.js"></script>
 <!--- End of Script Source Files -->
 </body>
 </html>

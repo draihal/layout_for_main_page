@@ -25,6 +25,9 @@ a:hover {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .08rem;
+    background: none!important;
+}
+nav.black {
     background: rgba(0, 0, 0, 0.6)!important;
 }
 #bell-icon svg.svg-inline--fa {
@@ -163,8 +166,11 @@ h3.heading {
 
 /*--- Partners section --*/
 
-.logo svg.svg-inline--fa {
+.slide svg.svg-inline--fa {
     color: #1ebba3;
+}
+.customer-logos {
+    padding-bottom: 2rem;
 }
 
 /*--- Reviews section --*/
@@ -200,6 +206,12 @@ footer svg.svg-inline--fa:hover {
 hr.socket {
     width: 300%;
     margin-left: -100%;
+}
+.socket-div {
+    padding-top: 0!important;
+}
+.footer-column {
+    padding-bottom: 0!important;
 }
 
 /*--- Media Queries --*/
