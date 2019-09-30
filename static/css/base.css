@@ -151,6 +151,12 @@ h3.heading {
     margin-top: 1.5rem;
 }
 
+/*--- Partners section --*/
+
+.logo svg.svg-inline--fa {
+    color: #1ebba3;
+}
+
 /*--- Reviews section --*/
 
 .reviews img {
@@ -177,7 +183,7 @@ footer {
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     color: #1ebba3;
 }
 footer a {
