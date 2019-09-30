@@ -5,7 +5,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #505962;
 }
-
+::selection {
+    background: #1ebba3;
+}
 .offset:before {
     display: block;
     content: "";
@@ -38,6 +40,10 @@ body {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #1ebba3;
+}
+.navbar-nav li:hover>.dropdown-menu {
+    display: block;
+    border-radius: 0;
 }
 /*.navbar-brand {*/
     /*color: #1ebba3!important;*/
@@ -90,7 +96,7 @@ body {
     border-width: medium;
     border-radius: 0;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: .6rem 1.2rem;
     margin: 1rem;
     color: white;
@@ -136,7 +142,8 @@ h3.heading {
 /*--- Teachers section --*/
 
 .fixed {
-    background-image: url(../image/light-background.png);
+    /*background-image: url(../image/light-background.png);*/
+    background-image: url(../image/man-working-on-macbook.jpg);
     z-index: -1;
 }
 .dark {
@@ -176,23 +183,30 @@ blockquote .svg-inline--fa{
 footer {
     background-color: #40474e;
     color: white;
-    padding: 2rem 0 .1rem;
-    margin-top: 1rem;
+    /*padding: 2rem 0 .1rem;*/
+    /*margin-top: 1rem;*/
 }
-#footer-name {
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 1rem 0;
-    color: #1ebba3;
-}
+/*#footer-name {*/
+    /*font-size: 1.4rem;*/
+    /*font-weight: 700;*/
+    /*text-transform: uppercase;*/
+    /*margin: 1rem 0;*/
+    /*color: #1ebba3;*/
+/*}*/
 footer a {
     color: white;
 }
-footer svg.svg-inline--fa {
-    font-size: 1.6rem;
-    margin: 1.2rem .5rem 0 0;
+footer a.active,
+footer a:hover {
+    color: #1ebba3;
 }
+/*footer svg.svg-inline--fa {*/
+    /*font-size: 1.6rem;*/
+    /*margin: 1.2rem .5rem 0 0;*/
+/*}*/
+/*.footer-columns {*/
+    /*margin: 0 auto;*/
+/*}*/
 footer svg.svg-inline--fa:hover {
     color: #1ebba3!important;
 }

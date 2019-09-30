@@ -23,8 +23,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Главная</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#courses">Курсы</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#courses"  id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курсы</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Категория курса</a>
+                        <a class="dropdown-item" href="#">Другая категория</a>
+                        <a class="dropdown-item" href="#">Еще одна</a>
+                        <a class="dropdown-item" href="#">И еще</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#teachers">Преподаватели</a>
@@ -72,7 +79,7 @@
             Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
             В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
             используя Lorem Ipsum для распечатки образцов.</p>
-        <a class="btn btn-secondary btn-md" href="#" target="_blank">Посмотреть расписание</a>
+        <a class="btn btn-secondary btn-md" href="#">Посмотреть расписание</a>
     </div>
     <!--- Start Jumbotron -->
     <div id="features">
@@ -189,7 +196,7 @@
         </div>
     </div> <!--- End Row -->
     <div class="col-12 text-center">
-        <a class="btn btn-secondary btn-md" href="#" target="_blank">Все компании</a>
+        <a class="btn btn-secondary btn-md" href="#">Все компании</a>
     </div>
 </div>
 <!--- End Partners Section -->
@@ -247,23 +254,59 @@
 <!--- Footer Section -->
 <div id="footer">
     <footer>
+        <div class="row footer-columns justify-content-center">
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="#" target="_blank">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <i class="fab fa-telegram fa-2x"></i>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <i class="fab fa-vk fa-2x"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">СМИ о нас</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#">Каталог курсов</a></li>
+                    <li><a href="#">Наши партнеры</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Программы лояльности</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <a href="tel:+79259999999" title="+7 925 999 99 99">+7 925 999 99 99</a>
+                <p>По всем вопросам пишите на
+                    <a href="mailto:help@test.com" target="_blank" title="help@test.com">help@test.com</a>
+                </p>
+                <div class="p-1 rounded border">
+                    <div class="input-group">
+                        <input type="email" placeholder="Введите Ваш email" aria-describedby="button-addon1"
+                               class="form-control border-0 shadow-0">
+                        <div class="input-group-append">
+                            <button id="button-addon1" type="submit" class="btn"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-5 text-center">
-                <a href="#" id="footer-name">Онлайн курсы</a>
-                <p>"lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются
-                    своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил
-                    много версий</p>
-                <strong>Контакты</strong>
-                <p>+7 999 999 99 99<br>email@test.com</p>
-                <a href="" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
                 <hr class="socket">
                 &copy; 2015-2019
             </div>
