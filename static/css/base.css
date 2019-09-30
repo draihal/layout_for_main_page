@@ -8,6 +8,9 @@ body {
 ::selection {
     background: #1ebba3;
 }
+a:hover {
+  text-decoration: none;
+}
 .offset:before {
     display: block;
     content: "";
@@ -45,9 +48,6 @@ body {
     display: block;
     border-radius: 0;
 }
-/*.navbar-brand {*/
-    /*color: #1ebba3!important;*/
-/*}*/
 
 /*--- Landing Page --*/
 
@@ -141,8 +141,11 @@ h3.heading {
 
 /*--- Teachers section --*/
 
+.teachers img {
+    width: 50%;
+    border-radius: 50%;
+}
 .fixed {
-    /*background-image: url(../image/light-background.png);*/
     background-image: url(../image/man-working-on-macbook.jpg);
     z-index: -1;
 }
@@ -183,16 +186,7 @@ blockquote .svg-inline--fa{
 footer {
     background-color: #40474e;
     color: white;
-    /*padding: 2rem 0 .1rem;*/
-    /*margin-top: 1rem;*/
 }
-/*#footer-name {*/
-    /*font-size: 1.4rem;*/
-    /*font-weight: 700;*/
-    /*text-transform: uppercase;*/
-    /*margin: 1rem 0;*/
-    /*color: #1ebba3;*/
-/*}*/
 footer a {
     color: white;
 }
@@ -200,21 +194,12 @@ footer a.active,
 footer a:hover {
     color: #1ebba3;
 }
-/*footer svg.svg-inline--fa {*/
-    /*font-size: 1.6rem;*/
-    /*margin: 1.2rem .5rem 0 0;*/
-/*}*/
-/*.footer-columns {*/
-    /*margin: 0 auto;*/
-/*}*/
 footer svg.svg-inline--fa:hover {
     color: #1ebba3!important;
 }
 hr.socket {
     width: 300%;
     margin-left: -100%;
-    /*border-top: .2rem solid #666b71;*/
-    /*margin-top: 3rem;*/
 }
 
 /*--- Media Queries --*/
@@ -240,6 +225,9 @@ hr.socket {
     max-width: 50%;
     display: block;
     margin: 0 auto;
+}
+.footer-columns {
+    text-align: center;
 }
 }
 
