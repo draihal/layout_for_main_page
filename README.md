@@ -2,8 +2,8 @@
 > Otus pyweb 12
 
 ## About
-This is a simple html page built for learning.
+This is a html page built for learning.
 
 
 ## Screenshots
-![screenshot](static/image/ .. .png) 
+![preview](static/image/preview.gif) 
