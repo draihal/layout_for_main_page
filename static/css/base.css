@@ -25,6 +25,9 @@ a:hover {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .08rem;
+    background: none!important;
+}
+nav.black {
     background: rgba(0, 0, 0, 0.6)!important;
 }
 #bell-icon svg.svg-inline--fa {
@@ -47,6 +50,9 @@ a:hover {
 .navbar-nav li:hover>.dropdown-menu {
     display: block;
     border-radius: 0;
+}
+.nav-item {
+    white-space: nowrap;
 }
 
 /*--- Landing Page --*/
@@ -152,7 +158,7 @@ h3.heading {
 .dark {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
-    padding: 5rem 1rem;
+    /*padding: 5rem 1rem;*/
 }
 .fixed-background h3 {
     margin-bottom: 2rem;
@@ -163,8 +169,11 @@ h3.heading {
 
 /*--- Partners section --*/
 
-.logo svg.svg-inline--fa {
+.slide svg.svg-inline--fa {
     color: #1ebba3;
+}
+.customer-logos {
+    padding-bottom: 2rem;
 }
 
 /*--- Reviews section --*/
@@ -201,6 +210,12 @@ hr.socket {
     width: 300%;
     margin-left: -100%;
 }
+.socket-div {
+    padding-top: 0!important;
+}
+.footer-column {
+    padding-bottom: 0!important;
+}
 
 /*--- Media Queries --*/
 
@@ -228,6 +243,12 @@ hr.socket {
 }
 .footer-columns {
     text-align: center;
+}
+}
+@media (min-width: 1200px) {
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 }
 
