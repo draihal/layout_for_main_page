@@ -31,7 +31,8 @@ module.exports = {
                         loader: "css-loader",
                     },
                     {
-                        loader: "postcss-loader"
+                        loader: "postcss-loader",
+                        // options: { ident: 'postcss' },
                     },
                     {
                         loader: "sass-loader",
