@@ -1,0 +1,23 @@
+{
+  "name": "layout_for_main_page",
+  "version": "1.0.0",
+  "description": "> Otus pyweb 12,15",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draihal/layout_for_main_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/draihal/layout_for_main_page/issues"
+  },
+  "homepage": "https://github.com/draihal/layout_for_main_page#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
