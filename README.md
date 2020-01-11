@@ -6,4 +6,4 @@ This is a html page built for learning. Adding JS.
 
 
 ## Preview
-![preview](static/image/preview-2.gif) 
+![preview](preview.gif) 
