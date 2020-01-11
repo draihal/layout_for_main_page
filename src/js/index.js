@@ -4,7 +4,6 @@ import 'popper.js'
 
 // Bootstrap 4
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 // slick-carousel
 import 'slick-carousel';
@@ -17,8 +16,5 @@ import '@fortawesome/fontawesome-free/js/brands'
 
 // project code
 import '../js/navbar.js';
-import '../js/carousel.js';
 
-import '../css/base.css';
-import '../css/fixed.css';
-import '../css/infinite-slider.css';
+import '../js/carousel.js';

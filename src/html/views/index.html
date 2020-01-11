@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Онлайн курсы</title>
-    <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/base.css">
-    <link rel="stylesheet" href="static/css/fixed.css">
-    <link rel="stylesheet" href="static/css/infinite-slider.css">
-</head>
-<body data-spy="scroll" data-target="#navbarResponsive">
+<% var data = {
+  title: "Онлайн курсы | Главная"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
 <!--- Start Home Section -->
 <div id="home">
     <!--- Start Navigation -->
@@ -141,21 +134,21 @@
                     <div class="col-md-4 teachers">
                         <h3>Иванов Иван</h3>
                         <div class="feature">
-                            <img src="static/image/teacher2.png" alt="Фотография преподавателя">
+                            <img src="uploads/teacher2.png" alt="Фотография преподавателя">
                             <p class="lead">Python QA</p>
                         </div>
                     </div>
                     <div class="col-md-4 teachers">
                         <h3>Федоров Федор</h3>
                         <div class="feature">
-                            <img src="static/image/teacher1.png" alt="Фотография преподавателя">
+                            <img src="uploads/teacher1.png" alt="Фотография преподавателя">
                             <p class="lead">Python Backend</p>
                         </div>
                     </div>
                     <div class="col-md-4 teachers">
                         <h3>Олегов Олег</h3>
                         <div class="feature">
-                            <img src="static/image/teacher3.png" alt="Фотография преподавателя">
+                            <img src="uploads/teacher3.png" alt="Фотография преподавателя">
                             <p class="lead">JavaScript developer</p>
                         </div>
                     </div>
@@ -206,7 +199,7 @@
                 <div class="col-md-6 reviews">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="static/image/user1.png" alt="Фотогрфия студента">
+                            <img src="uploads/user1.png" alt="Фотогрфия студента">
                         </div>
                         <div class="col-md-8">
                             <blockquote>
@@ -223,7 +216,7 @@
                 <div class="col-md-6 reviews">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="static/image/user2.png" alt="Фотогрфия студента">
+                            <img src="uploads/user2.png" alt="Фотогрфия студента">
                         </div>
                         <div class="col-md-8">
                             <blockquote>
@@ -246,72 +239,5 @@
     </div>
 </div>
 <!--- End Reviews Section -->
-<!--- Footer Section -->
-<div id="footer">
-    <footer>
-        <div class="container">
-            <div class="row footer-columns justify-content-center">
-                <div class="footer-column col-md-2">
-                    <ul class="list-unstyled">
-                        <li><a href="#" target="_blank">
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a></li>
-                        <li><a href="#" target="_blank">
-                            <i class="fab fa-telegram fa-2x"></i>
-                        </a></li>
-                        <li><a href="#" target="_blank">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a></li>
-                        <li><a href="#" target="_blank">
-                            <i class="fab fa-vk fa-2x"></i>
-                        </a></li>
-                    </ul>
-                </div>
-                <div class="footer-column col-md-2">
-                    <ul class="list-unstyled">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">СМИ о нас</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column col-md-2">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Каталог курсов</a></li>
-                        <li><a href="#">Наши партнеры</a></li>
-                        <li><a href="#">Блог</a></li>
-                        <li><a href="#">Программы лояльности</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column col-md-3">
-                    <a href="tel:+79259999999" title="+7 925 999 99 99">+7 925 999 99 99</a>
-                    <p>По всем вопросам пишите на
-                        <a href="mailto:help@test.com" target="_blank" title="help@test.com">help@test.com</a>
-                    </p>
-                    <div class="p-1 rounded border">
-                        <div class="input-group">
-                            <input type="email" placeholder="Введите Ваш email" aria-describedby="button-addon1"
-                                   class="form-control border-0 shadow-0">
-                            <div class="input-group-append">
-                                <button id="button-addon1" type="submit" class="btn"><i class="fa fa-paper-plane"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div></div>
-        <div class="row justify-content-center">
-            <div class="col-md-5 text-center socket-div">
-                <hr class="socket">
-                &copy; 2015-2019
-            </div>
-        </div>
-    </footer>
-</div>
-<!--- End Footer Section -->
-<!--- Script Source Files -->
-<script src="dist/bundle.js"></script>
-<!--- End of Script Source Files -->
-</body>
-</html>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

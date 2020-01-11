@@ -1,0 +1,18 @@
+<% var data = {
+  title: "Онлайн курсы | Расписание"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+<%= _.template(require('./../includes/navbar.html'))(data) %>
+
+<!--- Timetable Section -->
+<div class="container text-center courses-timetable">
+    <div class='row'>
+        <div class="col-12">
+            <h3 class="heading">Расписание на неделю</h3>
+            <div class="timetable"></div>
+        </div>
+    </div>
+</div>
+<!--- End Timetable -->
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -4,8 +4,14 @@
   "description": "> Otus pyweb 12,15",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "build-production": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "build-postcss": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build-and-beautify": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "beautify": "html dist/*.html --indent-size 2",
+    "clear": "del-cli dist"
   },
   "repository": {
     "type": "git",
@@ -23,20 +29,28 @@
     "@fortawesome/fontawesome-free": "^5.12.0",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
-    "bootstrap": "^4.4.1",
+    "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^6.0.3",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
+    "del-cli": "^3.0.0",
     "file-loader": "^5.0.2",
-    "jquery": "^3.4.1",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "popper.js": "^1.16.0",
+    "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.0",
     "sass": "^1.24.4",
     "sass-loader": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
 }
