@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание</title>
+    <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/timetable/timetablejs.css">
+    <link rel="stylesheet" href="static/timetable/courses-timetable.css">
+</head>
+<body>
+<!--- Start Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark black fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html#">Онлайн курсы</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html#courses"  id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курсы</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Категория курса</a>
+                        <a class="dropdown-item" href="#">Другая категория</a>
+                        <a class="dropdown-item" href="#">Еще одна</a>
+                        <a class="dropdown-item" href="#">И еще</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#teachers">Преподаватели</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#partners">Работа в компаниях</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="login-icon" href="#">
+                        <i class="fas fa-sign-in-alt fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="bell-icon" href="#">
+                        <i class="far fa-bell fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--- End Navigation -->
+<!--- Timetable Section -->
+<div class="container text-center courses-timetable">
+    <div class='row'>
+        <div class="col-12">
+            <h3 class="heading">Расписание на неделю</h3>
+            <div class="timetable"></div>
+        </div>
+    </div>
+</div>
+<!--- End Timetable -->
+<!--- Footer Section -->
+<div id="footer">
+    <footer>
+        <div class="container">
+            <div class="row footer-columns justify-content-center">
+                <div class="footer-column col-md-2">
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_blank">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a></li>
+                        <li><a href="#" target="_blank">
+                            <i class="fab fa-telegram fa-2x"></i>
+                        </a></li>
+                        <li><a href="#" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a></li>
+                        <li><a href="#" target="_blank">
+                            <i class="fab fa-vk fa-2x"></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-column col-md-2">
+                    <ul class="list-unstyled">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">СМИ о нас</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column col-md-2">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Каталог курсов</a></li>
+                        <li><a href="#">Наши партнеры</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Программы лояльности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column col-md-3">
+                    <a href="tel:+79259999999" title="+7 925 999 99 99">+7 925 999 99 99</a>
+                    <p>По всем вопросам пишите на
+                        <a href="mailto:help@test.com" target="_blank" title="help@test.com">help@test.com</a>
+                    </p>
+                    <div class="p-1 rounded border">
+                        <div class="input-group">
+                            <input type="email" placeholder="Введите Ваш email" aria-describedby="button-addon1"
+                                   class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn"><i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center socket-div">
+                <hr class="socket">
+                &copy; 2015-2019
+            </div>
+        </div>
+    </footer>
+</div>
+<!--- End Footer Section -->
+<!--- Script Source Files -->
+<script src="static/jquery/jquery-3.4.1.min.js"></script>
+<script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+<script src="static/timetable/timetable.js"></script>
+<script src="static/timetable/courses-timetable.js"></script>
+<!--- End of Script Source Files -->
+</body>
+</html>
