@@ -58,7 +58,7 @@ nav.black {
 /*--- Landing Page --*/
 
 .home-inner {
-    background-image: url("../image/computers.png");
+    background-image: url("../images/computers.png");
 }
 .caption {
     width: 100%;
@@ -152,7 +152,7 @@ h3.heading {
     border-radius: 50%;
 }
 .fixed {
-    background-image: url(../image/man-working-on-macbook.jpg);
+    background-image: url(../images/man-working-on-macbook.jpg);
     z-index: -1;
 }
 .dark {
