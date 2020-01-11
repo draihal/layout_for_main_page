@@ -30,7 +30,6 @@ module.exports = {
         // filename: 'bundle.js'
         filename: './js/bundle.js'
     },
-    // mode: 'development',
     devtool: "source-map",
     module: {
         rules: [
@@ -72,28 +71,6 @@ module.exports = {
                     }
                 ]
             },
-            // {
-            //     test: /\.(png|jpe?g|gif|svg)$/,
-            //     use: [
-            //         {
-            //             loader: "file-loader",
-            //             options: {
-            //                 outputPath: 'images'
-            //             }
-            //         }
-            //     ]
-            // },
-            // {
-            //     test: /\.(woff|woff2|ttf|otf|eot)$/,
-            //     use: [
-            //         {
-            //             loader: "file-loader",
-            //             options: {
-            //                 outputPath: 'fonts'
-            //             }
-            //         }
-            //     ]
-            // },
             {
                 test: /\.html$/,
                 include: path.resolve(__dirname, 'src/html/includes'),
@@ -112,8 +89,6 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "./css/bundle.css",
-            // filename: "bundle.css",
-            // allChunks: true,
         }),
         new CopyWebpackPlugin([
             {
