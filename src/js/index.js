@@ -18,3 +18,5 @@ import '@fortawesome/fontawesome-free/js/brands'
 import '../js/navbar.js';
 
 import '../js/carousel.js';
+
+import '../js/login-page.js';

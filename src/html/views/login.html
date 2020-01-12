@@ -1,9 +1,80 @@
 <% var data = {
-  title: "Онлайн курсы | Ввойти или зарегистрироваться"
+title: "Онлайн курсы | Ввойти или зарегистрироваться"
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 <%= _.template(require('./../includes/navbar.html'))(data) %>
 
 
+<!-- Start Login Section -->
+
+<div class="cont">
+    <div class="form sign-in">
+        <h2>Заполните поля снизу</h2>
+        <label>
+            <span>Email</span>
+            <input type="email" placeholder="example@dot.com" required/>
+        </label>
+        <label>
+            <span>Пароль</span>
+            <input type="password" required/>
+        </label>
+        <p class="forgot-pass">Забыли пароль?</p>
+        <button type="button" class="submit">Войти</button>
+        <button type="button" class="gh-btn">Войти с <span>github</span></button>
+    </div>
+    <div class="sub-cont">
+        <div class="img">
+            <div class="img__text m--up">
+                <h2>Нет аккаунта?</h2>
+                <p>Зарегистрируйся и получи доступ к множеству курсов!</p>
+            </div>
+            <div class="img__text m--in">
+                <h2>Уже есть аккаунт?</h2>
+                <p>Просто войдите, используя свои данные аккаунта.</p>
+            </div>
+            <div class="img__btn">
+                <span class="m--up">Регистрация</span>
+                <span class="m--in">Войти</span>
+            </div>
+        </div>
+        <div class="form sign-up">
+            <h2>Заполните поля снизу</h2>
+            <hr>
+            <div class="form-check form-check-inline accounttype">
+                <input class="form-check-input" type="radio" value="student" id="radioOne" name="account" />
+                <label for="radioOne" class="form-check-label radio chec">Студент</label>
+                <input class="form-check-input" type="radio" value="teacher" id="radioTwo" name="account" />
+                <label for="radioTwo" class="form-check-label radio">Преподаватель</label>
+                <input class="form-check-input" type="radio" value="partner" id="radioThree" name="account" />
+                <label for="radioThree" class="form-check-label radio">Партнер</label>
+            </div>
+            <hr>
+            <label>
+                <span>Имя</span>
+                <input type="text" required/>
+            </label>
+            <label>
+                <span>Фамилия</span>
+                <input type="text" />
+            </label>
+            <label>
+                <span>Телефон</span>
+                <input type="tel" required/>
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" required/>
+            </label>
+            <label>
+                <span>Пароль</span>
+                <input type="password" required/>
+            </label>
+            <button type="button" class="submit">Зарегистрироваться</button>
+            <button type="button" class="gh-btn">Зарегистрироваться с <span>github</span></button>
+        </div>
+    </div>
+</div>
+
+<!-- End Login Section -->
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
