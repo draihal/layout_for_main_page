@@ -26,11 +26,15 @@ module.exports = {
         './src/css/style.scss'
     ],
     output: {
-        // path: path.resolve(__dirname, 'dist'),
-        // filename: 'bundle.js'
         filename: './js/bundle.js'
     },
     devtool: "source-map",
+    devServer: {
+        port: 9000,
+        proxy: {
+            '/api': 'http://localhost:8000'
+        }
+    },
     module: {
         rules: [
             {
