@@ -1,9 +1,13 @@
 <% var data = {
-  title: "Онлайн курсы | Курсы"
+title: "Онлайн курсы | Курсы"
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 <%= _.template(require('./../includes/navbar.html'))(data) %>
 
-
+<div class="main courses text-center courses">
+  <h1>Курсы</h1>
+  <div class="row row-cols-1 row-cols-md-3" id="courses-cards">
+  </div>
+</div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
