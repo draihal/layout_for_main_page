@@ -19,4 +19,6 @@ import '../js/navbar.js';
 
 import '../js/carousel.js';
 
+import  '../js/courses.js';
+
 import '../js/login-page.js';

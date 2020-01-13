@@ -9,6 +9,17 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #505962;
 }
+
+body,html{
+   height:100%;
+}
+
+.main{
+  height:auto;
+  min-height:100%;
+  padding-top: 6rem;
+}
+
 ::selection {
     background: #1ebba3;
 }
